@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Calculator</title>
+    <meta name="description"
+        content="A premium calculator web application with modern dark aesthetics, smooth animations and glassmorphism.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="calculator-container">
+        <div class="calculator">
+            <div class="display">
+                <div class="previous-operand" id="previous-operand"></div>
+                <div class="current-operand" id="current-operand">0</div>
+            </div>
+            <div class="keypad scientific-keypad">
+                <!-- Top Control Row -->
+                <button class="btn fn toggle-mode" id="btn-deg-rad">DEG</button>
+                <button class="btn fn" data-action="clear" id="btn-ac">AC</button>
+                <button class="btn fn" data-action="delete" id="btn-del">DEL</button>
+                <button class="btn fn" data-action="percentage" id="btn-perc">%</button>
+                <button class="btn op" data-action="divide" id="btn-div">÷</button>
+
+                <!-- Scientific Row 1 -->
+                <button class="btn sc" data-action="sin" id="btn-sin">sin</button>
+                <button class="btn sc" data-action="cos" id="btn-cos">cos</button>
+                <button class="btn sc" data-action="tan" id="btn-tan">tan</button>
+                <button class="btn sc" data-action="factorial" id="btn-fact">x!</button>
+                <button class="btn op" data-action="multiply" id="btn-mul">×</button>
+
+                <!-- Scientific Row 2 -->
+                <button class="btn sc" data-action="ln" id="btn-ln">ln</button>
+                <button class="btn sc" data-action="log" id="btn-log">log</button>
+                <button class="btn sc" data-number="e" id="btn-e">e</button>
+                <button class="btn sc" data-number="π" id="btn-pi">π</button>
+                <button class="btn op" data-action="subtract" id="btn-sub">−</button>
+
+                <!-- Numbers Row 1 -->
+                <button class="btn sc" data-action="sqrt" id="btn-sqrt">√</button>
+                <button class="btn num" data-number="7" id="btn-7">7</button>
+                <button class="btn num" data-number="8" id="btn-8">8</button>
+                <button class="btn num" data-number="9" id="btn-9">9</button>
+                <button class="btn op" data-action="add" id="btn-add">+</button>
+
+                <!-- Numbers Row 2 -->
+                <button class="btn sc" data-action="power" id="btn-pow">xʸ</button>
+                <button class="btn num" data-number="4" id="btn-4">4</button>
+                <button class="btn num" data-number="5" id="btn-5">5</button>
+                <button class="btn num" data-number="6" id="btn-6">6</button>
+                <button class="btn equals" data-action="calculate" id="btn-eq" rowspan="2">=</button>
+
+                <!-- Numbers Row 3 -->
+                <button class="btn sc" data-number="(" id="btn-paren-open">(</button>
+                <button class="btn num" data-number="1" id="btn-1">1</button>
+                <button class="btn num" data-number="2" id="btn-2">2</button>
+                <button class="btn num" data-number="3" id="btn-3">3</button>
+
+                <!-- Bottom Row -->
+                <button class="btn sc" data-number=")" id="btn-paren-close">)</button>
+                <button class="btn num zero" data-number="0" id="btn-0">0</button>
+                <button class="btn num" data-number="." id="btn-dot">.</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- background decorative elements -->
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
